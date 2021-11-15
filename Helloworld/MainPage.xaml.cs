@@ -18,6 +18,7 @@ namespace Helloworld
         void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
         {
             Label.Text = String.Format("Value is {0}", e.NewValue);
+
         }
 
     }
