@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Helloworld.MainPage">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="Hello World" x:Name="label"/>
-        <Slider ValueChanged="Handle_ValueChanged"/>    
+    <StackLayout>
+    
+<ContentView HorizontalOptions="Center">
+        <Button Text="Clic moi" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_Clicked"/>
+</ContentView>
     </StackLayout>
 
 </ContentPage>

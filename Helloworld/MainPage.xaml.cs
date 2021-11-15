@@ -13,12 +13,11 @@ namespace Helloworld
         public MainPage()
         {
             InitializeComponent();
-
         }
-        void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            Label.Text = String.Format("Value is {0}", e.NewValue);
+            DisplayAlert("title", "Hello World", "Ok");
         }
-
     }
 }
