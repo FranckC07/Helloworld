@@ -18,7 +18,7 @@
             />
         <Slider 
                 Maximum="50"
-                x:Name="slider"
+                x:Name="slider" Minimum="16"
                 />
 
         <Label BindingContext="{x:Reference slider}"
