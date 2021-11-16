@@ -2,10 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Helloworld.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    Android="10, 0, 0, 0"
+                    WinPhone ="20, 40, 20, 20">
+        </OnPlatform>
+    </ContentPage.Padding>
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="Hello World" x:Name="label"/>
-        <Slider ValueChanged="Handle_ValueChanged"/>    
+    <StackLayout>
+        <Button Text="Next" Clicked="Handle_Clicked" />
+        <Label 
+			Text="{Binding 
+				Source={x:Reference slider}, 
+				Path=Value, 
+				StringFormat='Font Size: {0:N0}'}" />
+        <Slider 
+			x:Name="slider" 
+			Maximum="50" 
+			Minimum="16" />
+        <Label 
+			x:Name="currentQuote" 
+			FontSize="{Binding 
+				Source={x:Reference slider}, 
+				Path=Value}" />
+        <!--******************************************** ME *********************************************-->
+        <Button Text="Suivant" Clicked="next_Clicked" x:Name="next"/>
+        <Label BindingContext="{x:Reference slider1}"
+               Text="{Binding Value,
+               StringFormat='La taille de la Fonte est :  {0:N0}' }" 
+               Opacity="{Binding Value}" 
+            />
+        <Slider 
+                Maximum="50"
+                x:Name="slider1" Minimum="16"
+                />
+
+        <Label BindingContext="{x:Reference slider1}"
+               Text="La taille de la police grandit"
+               FontSize="{Binding Value}"
+               x:Name="text"/>
     </StackLayout>
 
 </ContentPage>
