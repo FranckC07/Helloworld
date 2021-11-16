@@ -5,22 +5,26 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
                     iOS="0,20, 0, 0"
-                    Android="10, 0, 0, 0">
+                    Android="10, 0, 0, 0"
+                    WinPhone ="20, 40, 20, 20">
         </OnPlatform>
     </ContentPage.Padding>
-    
-    <StackLayout BindingContext="{x:Reference slider}"
-                 HorizontalOptions="Center"
-                 VerticalOptions="Center">
-        <BoxView 
-            Color="Aqua" 
-            Opacity="{Binding Value}" />
-        <Label 
+
+    <StackLayout>
+        <Label BindingContext="{x:Reference slider}"
                Text="{Binding Value,
-               StringFormat='Value is {0:F2}' }" 
+               StringFormat='La taille de la Fonte est :  {0:F0}' }" 
                Opacity="{Binding Value}" 
             />
-        <Slider x:Name="slider" />    
+        <Slider 
+                Maximum="50"
+                x:Name="slider"
+                />
+
+        <Label BindingContext="{x:Reference slider}"
+               Text="La taille de la police grandit"
+               FontSize="{Binding Value}"
+               x:Name="text"/>
     </StackLayout>
 
 </ContentPage>
