@@ -10,13 +10,51 @@ namespace Helloworld
 {
     public partial class MainPage : ContentPage
     {
+        static int clic = 0;// ******************* ME 
+        private int _index = 0;
+        private string[] _quotes = new string[]
+        {
+            "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+            "You can't blame gravity for falling in love.",
+            "Look deep into nature, and then you will understand everything better."
+        };
         public MainPage()
         {
             InitializeComponent();
+            currentQuote.Text = _quotes[_index];
+           
 
-            slider.Value = 16;
-                       
         }
-       
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            _index++;
+            if (_index >= _quotes.Length)
+                _index = 0;
+
+            currentQuote.Text = _quotes[_index];
+        }
+        //********************* ME *********************************
+        void next_Clicked(object sender, System.EventArgs e)
+        {
+            if (clic == 0)
+            {
+                text.Text = "Text de seconde position";
+            };
+            if (clic == 1)
+            {
+                text.Text = "Text de troisième position";
+            }
+            if (clic == 2)
+            {
+                text.Text = "Text on vas boucler apres cela";
+                clic = 0;
+            }
+            else
+            {
+                clic++;
+            }
+        }
+
     }
 }
+
