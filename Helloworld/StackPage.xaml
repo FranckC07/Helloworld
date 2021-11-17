@@ -11,20 +11,20 @@
     <StackLayout>
         <StackLayout>
             <Label Text="Nyc photographer"/>
-            <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
         </StackLayout>
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
         <StackLayout Orientation="Horizontal"
-                     Padding="10,20,10,20">
+                     Spacing="20"
+                     Padding="10,0">
             <Button Text="Like"/>
             <Button Text="Comment"/>
             <Button Text="Share"/>
         </StackLayout>
-        <StackLayout Padding="10,20,10,20">
-            <Line Aspect="UniformToFill"
-                   Opacity="100"/>
+        <StackLayout Padding="10">
+            <BoxView HeightRequest="1" Color="#f0f0f0" />
             <Label Text="700 Likes"
                    FontAttributes="Bold"/>
-            <Label Text="This is a chjot yesterday in Skanor, Sweeden, when driving home, from a couple of days of work in Danemark." />
+            <Label TextColor="#444" Text="This is a chjot yesterday in Skanor, Sweeden, when driving home, from a couple of days of work in Danemark." />
         </StackLayout>
     </StackLayout>
 </ContentPage>
