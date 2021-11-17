@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Helloworld
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class GridExercice2 : ContentPage
     {
-        
-        public MainPage()
+        public GridExercice2()
         {
             InitializeComponent();
-         
         }
-       
-
     }
 }
-

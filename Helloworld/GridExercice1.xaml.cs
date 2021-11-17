@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Helloworld
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackPage : ContentPage
+    public partial class GridExercice1 : ContentPage
     {
-        public StackPage()
+        public GridExercice1()
         {
             InitializeComponent();
         }
