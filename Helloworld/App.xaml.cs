@@ -10,7 +10,7 @@ namespace Helloworld
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new StackPage();
             
         }
 

@@ -22,7 +22,6 @@ namespace Helloworld
         {
             InitializeComponent();
             currentQuote.Text = _quotes[_index];
-           
 
         }
         void Handle_Clicked(object sender, System.EventArgs e)
