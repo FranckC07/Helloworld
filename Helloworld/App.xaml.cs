@@ -10,8 +10,8 @@ namespace Helloworld
         {
             InitializeComponent();
 
-            MainPage = new AbsolutelayoutExercice1();
-            //MainPage = new AbsolutelayoutExercice2();
+            //MainPage = new AbsolutelayoutExercice1();
+            MainPage = new AbsolutelayoutExercice2();
             //MainPage = new GridExercice2();
             //MainPage = new GridExercice2();
             //MainPage = new StacklayoutExercice1();
