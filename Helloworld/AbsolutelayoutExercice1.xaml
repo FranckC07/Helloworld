@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Helloworld.AbsolutelayoutExercice1">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="Helloworld.AbsolutelayoutExercice1"
+             
+             >
+    <AbsoluteLayout >
+        
+        <BoxView Color="#f7f7f7"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3" AbsoluteLayout.LayoutFlags="All" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3" AbsoluteLayout.LayoutFlags="All">
+            <Label Text="$11.95" TextColor="#33353a" FontSize="60" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Button Text="Add $7.99 Credit" HeightRequest="30" BorderRadius="15" FontSize="15" FontAttributes="Bold" BackgroundColor="#1695A3" TextColor="White" />
         </StackLayout>
-    </ContentPage.Content>
+      
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0.5,1,0.3" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White">
+            <Label Text="Pourquoi payer pour un crédit" FontAttributes="Bold" FontSize="15"  HorizontalOptions="Center" />
+            <Label FontSize="13" HorizontalOptions="Center" HorizontalTextAlignment="Center" >
+                Because you can reach people who aren’t onSkyApp by calling mobile and landlinenumbers, or spending SMS, at low-cost rates.
+            </Label>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
