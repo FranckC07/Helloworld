@@ -9,7 +9,8 @@ namespace Helloworld
         public App()
         {
             InitializeComponent();
-            MainPage = new RelativelayoutExercice();
+            MainPage = new ImageExercice();
+            //MainPage = new RelativelayoutExercice();
             //MainPage = new AbsolutelayoutExercice1();
             //MainPage = new AbsolutelayoutExercice2();
             //MainPage = new GridExercice2();
