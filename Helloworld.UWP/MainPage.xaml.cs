@@ -20,7 +20,6 @@ namespace Helloworld.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
             LoadApplication(new Helloworld.App());
         }
     }
