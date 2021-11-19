@@ -19,6 +19,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="images\background.jpg" />
+    <None Remove="images\cat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\background.jpg" />
+    <EmbeddedResource Include="images\cat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>

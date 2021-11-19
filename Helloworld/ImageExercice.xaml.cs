@@ -16,9 +16,9 @@ namespace Helloworld
         {
             InitializeComponent();
 
-            var imageSource = new UriImageSource { Uri = new Uri("https://s2.best-wallpaper.net/wallpaper/1920x1080/1302/Extreme-sports-mountain-bike_1920x1080.jpg") };
-            imageSource.CachingEnabled = false;
-            image.Source = imageSource;
+            //var imageSource = new UriImageSource { Uri = new Uri("https://s2.best-wallpaper.net/wallpaper/1920x1080/1302/Extreme-sports-mountain-bike_1920x1080.jpg") };
+            //imageSource.CachingEnabled = false;
+            //image.Source = ImageSource.FromResource("Helloworld.images.cat.jpg");
 
         }
     }
